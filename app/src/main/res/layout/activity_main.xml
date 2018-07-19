@@ -5,52 +5,44 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.kaushikramesh.project.View.MainActivity">
+    tools:context="com.xfinity.project.View.MainActivity">
 
-<LinearLayout
-    android:id="@+id/gridToggleView"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:layout_alignParentEnd="true"
-    android:layout_alignParentRight="true">
-
-
-    <TextView
-        android:id="@+id/grid"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:gravity="right"
-        android:layout_marginTop="8dp"
-        android:layout_marginRight="16dp"
-        android:layout_marginEnd="16dp"
-        android:text="@string/Grid" />
-
-    <ToggleButton
-        android:id="@+id/toggler"
+    <LinearLayout
+        android:id="@+id/gridToggleView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:layout_marginRight="16dp"
-        android:layout_marginEnd="16dp"
-        />
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true">
 
-</LinearLayout>
 
-    <ViewStub
-        android:layout_below="@id/gridToggleView"
-        android:id="@+id/toggleViewList"
+        <TextView
+            android:id="@+id/grid"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginEnd="16dp"
+            android:text="@string/Grid" />
+
+        <ToggleButton
+            android:id="@+id/toggler"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginEnd="16dp"
+            />
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/mainFrameLayout"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:inflatedId="@+id/toggleView"
-        android:layout="@layout/list_view"
-        />
-    <ViewStub
-        android:layout_below="@id/gridToggleView"
-        android:id="@+id/toggleViewGrid"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:inflatedId="@+id/toggleView"
-        android:layout="@layout/grid_view"
-        />
+        android:layout_height="match_parent"
+        android:layout_below="@+id/gridToggleView">
+
+    </FrameLayout>
+
 </RelativeLayout>

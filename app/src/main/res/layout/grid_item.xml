@@ -5,8 +5,8 @@
 
     <ImageView
         android:id="@+id/gridItemImage"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
+        android:layout_width="@dimen/gridItemImageWidth"
+        android:layout_height="@dimen/gridItemImageHeight"
         android:layout_centerInParent="true"
         />
 
